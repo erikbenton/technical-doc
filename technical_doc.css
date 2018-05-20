@@ -1,0 +1,15 @@
+#navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	display: block;
+	border-right: 2px solid gray;
+}
+
+#main-doc {
+	width: 80%;
+	margin-left: 20%;
+	padding-left: 32px;
+}
