@@ -7,7 +7,7 @@
 </head>
 <body>
 	<nav id="navbar">
-		<header id="nav-title"><h2>4D Tech Specs</h2></header>
+		<header id="nav-title"><img id="navbar-image" src="4D_logo.png"><h2 id="tester"> Tech Specs</h2></header>
 		<ul>
 			<li><a class="nav-link" href="#introduction">Introduction</a></li>
 			<li><a class="nav-link" href="#screen">Screen</a></li>
@@ -22,6 +22,7 @@
 		<section id="introduction" class="main-section">
 			<header>
 				<h2>Introduction</h2>
+				<img id="introduction-image" src="4D_web_logo.png">
 			</header>	
 			<p>
 				Bacon ipsum dolor amet buffalo prosciutto frankfurter filet mignon strip steak turducken brisket ground round beef ribs chicken tongue. Salami ball tip meatball cupim cow burgdoggen jowl meatloaf pork belly ribeye frankfurter shoulder hamburger pork. Jowl cow fatback, turducken burgdoggen boudin drumstick shoulder andouille picanha ball tip filet mignon tongue flank. Drumstick sausage t-bone, meatloaf doner pork belly beef pancetta.
@@ -41,6 +42,7 @@
 		<section id="screen" class="main-section">
 			<header>
 				<h2>Screen</h2>
+				<img id="Touchscreen-image" src="gen4-uLCD-70D_SLIDER_1.png">
 			</header>
 			<p>
 				Bacon ipsum dolor amet buffalo prosciutto frankfurter filet mignon strip steak turducken brisket ground round beef ribs chicken tongue. Salami ball tip meatball cupim cow burgdoggen jowl meatloaf pork belly ribeye frankfurter shoulder hamburger pork. Jowl cow fatback, turducken burgdoggen boudin drumstick shoulder andouille picanha ball tip filet mignon tongue flank. Drumstick sausage t-bone, meatloaf doner pork belly beef pancetta.
@@ -61,24 +63,47 @@
 			<header>
 				<h2>Hardware and GPIO</h2>
 			</header>
-			<p>
-				Bacon ipsum dolor amet buffalo prosciutto frankfurter filet mignon strip steak turducken brisket ground round beef ribs chicken tongue. Salami ball tip meatball cupim cow burgdoggen jowl meatloaf pork belly ribeye frankfurter shoulder hamburger pork. Jowl cow fatback, turducken burgdoggen boudin drumstick shoulder andouille picanha ball tip filet mignon tongue flank. Drumstick sausage t-bone, meatloaf doner pork belly beef pancetta.
-			</p>
-			<p>
-				<ul>
-					<li>Pork chop venison turkey pig leberkas. Ham hock buffalo venison, short loin filet mignon jerky kielbasa pork chop tri-tip pancetta. Tenderloin ground round tongue, pork short loin t-bone strip steak rump alcatra.</li>
-					<li>Beef swine picanha chuck. Corned beef frankfurter pig, biltong boudin buffalo spare ribs burgdoggen. Ham hock strip steak leberkas picanha kevin landjaeger doner hamburger chicken ball tip pork loin fatback.</li>
-					<li>Beef ribs t-bone burgdoggen tenderloin short loin, bacon pig bresaola tri-tip cow doner filet mignon leberkas. Pig shank cupim kevin short ribs pork loin frankfurter meatball ham hock.</li>
-				</ul>
-			</p>
-			<p>
-				Pig meatball landjaeger buffalo. Boudin tongue doner, swine ham chuck tenderloin pork chop kevin. Prosciutto meatloaf andouille porchetta capicola t-bone picanha shank chicken beef venison tail shoulder pastrami. Porchetta bresaola turkey, tongue kevin meatloaf kielbasa beef meatball brisket pork belly hamburger beef ribs sirloin andouille. Burgdoggen chicken boudin, kielbasa pork belly prosciutto jerky turducken ground round meatloaf ham hamburger sausage biltong pork. Pork chop tenderloin tail short loin, porchetta sirloin alcatra fatback turducken sausage kevin ground round.
-			</p>
+			<ul id="hardware_gpio_list">
+				<li>Powerful 7.0” Intelligent LCD-TFT display module powered by DIABLO16.</li>
+				<li>800 x 480 Resolution, RGB 65K true to life colours, TFT Screen with integrated 4-wire Resistive Touch Panel (on DT model only), integrated Capacitive Touch (on DCT model only), or non-touch.</li>
+				<li>6 banks of 32750 bytes of Flash memory for User Application Code and Data.</li>
+				<li>32Kb of SRAM purely for the User.</li>
+				<li>16 General Purpose I/O pins for user interfacing, which include 4 configurable Analog Inputs.</li>
+				<li>The GPIO is variously configurable for alternative functions such as:</li>
+				<li>3x I2C channels available.</li>
+				<li>1x SPI dedicated for SD Card and 3x configurable SPI channels available.</li>
+				<li>1x dedicated and 3x configurable TTL Serial comm ports available.</li>
+				<li>Up to 6 GPIO can be used as Pin Counters.</li>
+				<li>Up to 6 GPIO for PWM (simple and Servo).</li>
+				<li>Up to 10 GPIO for Pulse Output.</li>
+				<li>Up to 14 GPIO can be configured for Quadrature Encoder Inputs (2 channels).</li>
+				<li>30pin FPC connection, for all signals, power, communications, GPIO and programming.</li>
+				<li>On-board latch type micro-SD memory card connector for multimedia storage and data logging purposes.</li>
+				<li>DOS compatible file access (FAT16 format) as well as low level access to card memory.</li>
+				<li>Dedicated PWM Audio pin driven by WAV files from micro-SD card, and for sound generation, for an external amplifier.</li>
+				<li>Display full colour images, animations, icons and video clips.</li>
+				<li>Supports all available Windows fonts.</li>
+				<li>4.0V to 5.5V range operation (single supply).</li>
+				<li>Module dimensions:</li>
+				<li>(D): 187.0 x 102.1 x 7.2mm.</li>
+				<li>(D-CLB): 190.1 x 121.9 x 7.3mm.</li>
+				<li>(DT): 187.0 x 102.1 x 8.3mm.</li>
+				<li>(DCT-CLB): 190.1 x 121.9 x 8.2mm.</li>
+				<li>4x mounting tabs with 4.2mm holes for mechanical mounting using M4 screws (D and DT only).</li>
+				<li>RoHS and REACH compliant.</li>
+				<li>CE Compliant – please ask for CE declarations from our Support Team.</li>
+			</ul>
 		</section>
 	
 		<section id="workshop" class="main-section">
 			<header>
 				<h2>4D Workshop IDE</h2>
+				<img src="WS4-PRO Buynow.jpg">
+				<!-- <div id="workshop-image">
+					<img id="workshop-image1" src="workshop4_software01.jpg">
+					<img id="workshop-image2" src="workshop4_software02.jpg">
+					<img id="workshop-image3" src="workshop4_software03.jpg">
+				</div> -->
 			</header>
 			<p>
 				Bacon ipsum dolor amet buffalo prosciutto frankfurter filet mignon strip steak turducken brisket ground round beef ribs chicken tongue. Salami ball tip meatball cupim cow burgdoggen jowl meatloaf pork belly ribeye frankfurter shoulder hamburger pork. Jowl cow fatback, turducken burgdoggen boudin drumstick shoulder andouille picanha ball tip filet mignon tongue flank. Drumstick sausage t-bone, meatloaf doner pork belly beef pancetta.

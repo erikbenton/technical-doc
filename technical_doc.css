@@ -9,6 +9,16 @@
 	border-right: 2px solid gray;
 }
 
+#nav-title {
+	line-height: 50%;
+	display: inline;
+}
+
+#nav-title #tester {
+	vertical-align: middle;
+	display: inline;
+}
+
 #main-doc {
 	width: 85%;
 	margin-left: 15%;
@@ -17,4 +27,14 @@
 
 .main-section {
 	border-bottom: 1px solid black;
+}
+
+#navbar-image {
+	width: 25%;
+	display: inline;
+}
+
+#introduction-image {
+	background-color: red;
+	padding: 5px 10px 5px 5px;
 }
