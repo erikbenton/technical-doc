@@ -28,6 +28,8 @@
 	</nav>
 
 	<main id="main-doc">
+
+		<!-- INTRODUCTION SECTION -->
 		<section id="introduction" class="main-section">
 			<header>
 				<h2>Introduction</h2>
@@ -57,6 +59,7 @@
 			</p>
 		</section>
 
+		<!-- SCREEN SECTION -->
 		<section id="screen" class="main-section">
 			<header>
 				<h2>Screen</h2>
@@ -84,6 +87,244 @@
 			<p>
 				The gen4 series of modules has been designed to minimise the impact of display related circuitry, and provide a platform suitable for integration into a product. Application boards can sit flush on the back of the gen4 if required, as the display related electronics sit inside the plastic mounting base, leaving the application board surface clear for User circuitry.
 			</p>
+
+			<section id="screen-features" class="sub-section">
+				<header>
+					<h3>Features</h3>
+				</header>
+				<ul id="screen_features_list">
+				<li>Powerful 7.0” Intelligent LCD-TFT display module powered by DIABLO16.</li>
+				<li>800 x 480 Resolution, RGB 65K true to life colours, TFT Screen with integrated 4-wire Resistive Touch Panel (on DT model only), integrated Capacitive Touch (on DCT model only), or non-touch.</li>
+				<li>6 banks of 32750 bytes of Flash memory for User Application Code and Data.</li>
+				<li>32Kb of SRAM purely for the User.</li>
+				<li>16 General Purpose I/O pins for user interfacing, which include 4 configurable Analog Inputs.</li>
+				<li>The GPIO is variously configurable for alternative functions such as:</li>
+				<ul>
+					<li>3x I2C channels available.</li>
+					<li>1x SPI dedicated for SD Card and 3x configurable SPI channels available.</li>
+					<li>1x dedicated and 3x configurable TTL Serial comm ports available.</li>
+					<li>Up to 6 GPIO can be used as Pin Counters.</li>
+					<li>Up to 6 GPIO for PWM (simple and Servo).</li>
+					<li>Up to 10 GPIO for Pulse Output.</li>
+					<li>Up to 14 GPIO can be configured for Quadrature Encoder Inputs (2 channels).</li>
+				</ul>
+				<li>30pin FPC connection, for all signals, power, communications, GPIO and programming.</li>
+				<li>On-board latch type micro-SD memory card connector for multimedia storage and data logging purposes.</li>
+				<li>DOS compatible file access (FAT16 format) as well as low level access to card memory.</li>
+				<li>Dedicated PWM Audio pin driven by WAV files from micro-SD card, and for sound generation, for an external amplifier.</li>
+				<li>Display full colour images, animations, icons and video clips.</li>
+				<li>Supports all available Windows fonts.</li>
+				<li>4.0V to 5.5V range operation (single supply).</li>
+				<li>Module dimensions:</li>
+				<li>(D): 187.0 x 102.1 x 7.2mm.</li>
+				<li>(D-CLB): 190.1 x 121.9 x 7.3mm.</li>
+				<li>(DT): 187.0 x 102.1 x 8.3mm.</li>
+				<li>(DCT-CLB): 190.1 x 121.9 x 8.2mm.</li>
+				<li>4x mounting tabs with 4.2mm holes for mechanical mounting using M4 screws (D and DT only).</li>
+				<li>RoHS and REACH compliant.</li>
+				<li>CE Compliant – please ask for CE declarations from our Support Team.</li>
+			</ul>
+			</section>
+
+			<section id="screen-hardware-overview" class="sub-section">
+				<header>
+					<h3>Hardware Overview</h3>
+				</header>
+
+				<img id="screen-hardware-overview-image" src="screen_hardware_overview.png">
+				<table id="screen-hardware-overview-table">
+				  <caption>USER I/O – 30 Way FPC</caption>
+				  <tbody>
+				    <tr>
+				      <th class="pin-col" scope="col">Pin</th>
+				      <th class="symbol-col" scope="col">Symbol</th>
+				      <th class="io-row" scope="col">I/O</th>
+				      <th class="description-row" scope="col">Description</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">1</th>
+				      <th class="symbol-col" scope="col">GND</th>
+				      <th class="io-row" scope="col">P</th>
+				      <th class="description-row" scope="col">Supply Ground</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">2</th>
+				      <th class="symbol-col" scope="col">PA3</th>
+				      <th class="io-row" scope="col">I/O/A</th>
+				      <th class="description-row" scope="col">General Purpose I/O pin with Analog Capability. This pin has a range of 0-3.3V when used as an Analog Input, and is 3.3V tolerant only. Also used for Bus Read</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">3</th>
+				      <th class="symbol-col" scope="col">PA2</th>
+				      <th class="io-row" scope="col">I/O/A</th>
+				      <th class="description-row" scope="col">General Purpose I/O pin with Analog Capability. This pin has a range of 0-3.3V when used as an Analog Input, and is 3.3V tolerant only. Also used for Bus Write</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">4</th>
+				      <th class="symbol-col" scope="col">PA1</th>
+				      <th class="io-row" scope="col">I/O/A</th>
+				      <th class="description-row" scope="col">General Purpose I/O pin with Analog Capability. This pin has a range of 0-3.3V when used as an Analog Input, and is 3.3V tolerant only.</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">5</th>
+				      <th class="symbol-col" scope="col">PA0</th>
+				      <th class="io-row" scope="col">I/O/A</th>
+				      <th class="description-row" scope="col">General Purpose I/O pin with Analog Capability. This pin has a range of 0-3.3V when used as an Analog Input, and is 3.3V tolerant only.</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">6</th>
+				      <th class="symbol-col" scope="col">PA9</th>
+				      <th class="io-row" scope="col">I/O</th>
+				      <th class="description-row" scope="col">General Purpose Input/Output, 3.3V Level - 5V Tolerant</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">7</th>
+				      <th class="symbol-col" scope="col">PA8</th>
+				      <th class="io-row" scope="col">I/O</th>
+				      <th class="description-row" scope="col">General Purpose Input/Output, 3.3V Level - 5V Tolerant</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">8</th>
+				      <th class="symbol-col" scope="col">PA7</th>
+				      <th class="io-row" scope="col">I/O</th>
+				      <th class="description-row" scope="col">General Purpose Input/Output, 3.3V Level - 5V Tolerant</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">9</th>
+				      <th class="symbol-col" scope="col">PA6</th>
+				      <th class="io-row" scope="col">I/O</th>
+				      <th class="description-row" scope="col">General Purpose Input/Output, 3.3V Level - 5V Tolerant</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">10</th>
+				      <th class="symbol-col" scope="col">PA5</th>
+				      <th class="io-row" scope="col">I/O</th>
+				      <th class="description-row" scope="col">General Purpose Input/Output, 3.3V Level - 5V Tolerant</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">11</th>
+				      <th class="symbol-col" scope="col">PA4</th>
+				      <th class="io-row" scope="col">I/O</th>
+				      <th class="description-row" scope="col">General Purpose Input/Output, 3.3V Level - 5V Tolerant</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">12</th>
+				      <th class="symbol-col" scope="col">PA10</th>
+				      <th class="io-row" scope="col">I/O</th>
+				      <th class="description-row" scope="col">General Purpose Input/Output, 3.3V Level - 5V Tolerant</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">13</th>
+				      <th class="symbol-col" scope="col">PA11</th>
+				      <th class="io-row" scope="col">I/O</th>
+				      <th class="description-row" scope="col">General Purpose Input/Output, 3.3V Level - 5V Tolerant</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">14</th>
+				      <th class="symbol-col" scope="col">PA12</th>
+				      <th class="io-row" scope="col">I/O</th>
+				      <th class="description-row" scope="col">General Purpose Input/Output, 3.3V Level - 5V Tolerant</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">15</th>
+				      <th class="symbol-col" scope="col">PA13</th>
+				      <th class="io-row" scope="col">I/O</th>
+				      <th class="description-row" scope="col">General Purpose Input/Output, 3.3V Level - 5V Tolerant</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">16</th>
+				      <th class="symbol-col" scope="col">PA14</th>
+				      <th class="io-row" scope="col">I/O</th>
+				      <th class="description-row" scope="col">General Purpose Input/Output, 3.3V Tolerant only. Special I2C Pin.</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">17</th>
+				      <th class="symbol-col" scope="col">PA15</th>
+				      <th class="io-row" scope="col">I/O</th>
+				      <th class="description-row" scope="col">General Purpose Input/Output, 3.3V Tolerant only. Special I2C Pin.</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">18</th>
+				      <th class="symbol-col" scope="col">NC</th>
+				      <th class="io-row" scope="col">-</th>
+				      <th class="description-row" scope="col">Not Connected</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">19</th>
+				      <th class="symbol-col" scope="col">AUDIO_OUT</th>
+				      <th class="io-row" scope="col">O</th>
+				      <th class="description-row" scope="col">Audio Output, Filtered PWM, to feed into external amplifier</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">20</th>
+				      <th class="symbol-col" scope="col">AUDIOENB</th>
+				      <th class="io-row" scope="col">O</th>
+				      <th class="description-row" scope="col">Audio Amplifier Enable, to enable/disable external amplifier</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">21</th>
+				      <th class="symbol-col" scope="col">GND</th>
+				      <th class="io-row" scope="col">P</th>
+				      <th class="description-row" scope="col">Supply Ground</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">22</th>
+				      <th class="symbol-col" scope="col">RESET</th>
+				      <th class="io-row" scope="col">I</th>
+				      <th class="description-row" scope="col">Master Reset signal. Internally pulled up to 3.3V via a 10K resistor. An active Low pulse greater than 2 micro-seconds will reset the module. If the module needs to be reset externally, only use open collector type circuits. This pin is not driven low by any internal conditions. The host should control this pin via one of its port pins using an open collector/drain arrangement.</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">23</th>
+				      <th class="symbol-col" scope="col">RX0</th>
+				      <th class="io-row" scope="col">I</th>
+				      <th class="description-row" scope="col">Asynchronous Serial Receive pin, TTL level. Connect this pin to the Transmit (Tx) signal of other serial devices. Used in conjunction with the TX pin for programming this microLCD. This pin is tolerant up to 5.0V levels.</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">24</th>
+				      <th class="symbol-col" scope="col">TX0</th>
+				      <th class="io-row" scope="col">O</th>
+				      <th class="description-row" scope="col">Asynchronous Serial Transmit pin, TTL level. Connect this pin to the Receive (Rx) signal of other serial devices. Used in conjunction with the RX pin for programming this microLCD. This pin is tolerant up to 5.0V levels.</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">25</th>
+				      <th class="symbol-col" scope="col">GND</th>
+				      <th class="io-row" scope="col">P</th>
+				      <th class="description-row" scope="col">Supply Ground</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">26</th>
+				      <th class="symbol-col" scope="col">5V IN</th>
+				      <th class="io-row" scope="col">P</th>
+				      <th class="description-row" scope="col">Main Voltage Supply +ve input pin. Reverse polarity protected. Range is 4.0V to 5.5V, nominal 5.0V.</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">27</th>
+				      <th class="symbol-col" scope="col">5V IN</th>
+				      <th class="io-row" scope="col">P</th>
+				      <th class="description-row" scope="col">Main Voltage Supply +ve input pin. Reverse polarity protected. Range is 4.0V to 5.5V, nominal 5.0V.</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">28</th>
+				      <th class="symbol-col" scope="col">NC</th>
+				      <th class="io-row" scope="col">-</th>
+				      <th class="description-row" scope="col">Not Connected</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">29</th>
+				      <th class="symbol-col" scope="col">NC</th>
+				      <th class="io-row" scope="col">-</th>
+				      <th class="description-row" scope="col">Not Connected</th>
+				    </tr>
+				    <tr>
+				      <th class="pin-col" scope="col">30</th>
+				      <th class="symbol-col" scope="col">GND</th>
+				      <th class="io-row" scope="col">P</th>
+				      <th class="description-row" scope="col">Supply Ground</th>
+				    </tr>
+				  </tbody>
+				</table>
+
+			</section>
 		</section>
 	
 		<section id="hardware_gpio" class="main-section">
