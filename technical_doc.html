@@ -329,6 +329,114 @@
 				<header>
 					<h3>Hardware Interface</h3>
 				</header>
+				<section id="serial-ports" class="sub-sub-section">
+					<header>
+						<h4>Serial Ports - TTL Level Serial</h4>
+					</header>
+					<p>
+					The DIABLO16 Processor has three hardware
+					asynchronous serial ports (COM1 – COM3) that can
+					be configured on a variety of the processors GPIO
+					pins. TX/RX0 (COM0) is dedicated and its pins are
+					fixed. All of the DIABLO16’s serial ports can be used
+					to communicate with external serial devices.
+					</p>
+					<p>
+					TX/RX0 are referred to as COM0, and is the only one
+					used for programming the DIABLO16 itself.
+					</p>
+					<p>
+					The primary features are:
+						<ul>
+							<li>Full-Duplex 8 bit data transmission and
+							reception.</li>
+
+							<li>Data format: 8 bits, No Parity, 1 Stop bit.</li>
+
+							<li>Independent Baud rates from 300 baud up
+							to 600K baud.</li>
+
+							<li>Single byte transmits and receives or a fully
+							buffered service. The buffered service
+							feature runs in the background capturing
+							and buffering serial data without the user
+							application having to constantly poll any of
+							the serial ports. This frees up the application
+							to service other tasks.</li>
+						</ul>
+					</p>
+					<p>
+					A single byte serial transmission consists of the start
+					bit, 8-bits of data followed by the stop bit. The start
+					bit is always 0, while a stop bit is always 1. The LSB
+					(Least Significant Bit, Bit 0) is sent out first following
+					the start bit. Figure below shows a single byte
+					transmission timing diagram.
+					</p>
+					<p>
+					COM0 is also the primary interface for User program
+					downloads, and configuration PmmC /Driver
+					programming. Once the compiled 4DGL application
+					program (EVE byte-code) is downloaded and the user
+					code starts executing, the serial port is then available
+					to the user application.
+					</p>
+					<p>
+					TX0 pin (Serial Transmit COM0):
+					Dedicated Asynchronous Serial port COM0 transmit
+					pin, TX0. Connect this pin to external serial device
+					receive (Rx) signal. This pin is 5.0V tolerant.
+					</p>
+					<p>
+					RX0 pin (Serial Receive COM0):
+					Dedicated Asynchronous Serial port COM0 receive
+					pin, RX0. Connect this pin to external serial device
+					transmit (Tx) signal. This pin is 5.0V tolerant.
+					</p>
+					<p>
+					TX1 pin (Serial Transmit COM1):
+					Asynchronous Serial port COM1 transmit pin, TX1.
+					Connect this pin to external serial device receive (Rx)
+					signal. This pin is 5.0V tolerant. This can be
+					configured to 1 of the GPIO pins, see table following.
+					</p>
+					<p>
+					RX1 pin (Serial Receive COM1):
+					Asynchronous Serial port COM1 receive pin, RX1.
+					Connect this pin to external serial device transmit (Tx)
+					signal. This pin is 5.0V tolerant. This can be
+					configured to 1 of the GPIO pins, see table following.
+					</p>
+					<p>
+					TX2 pin (Serial Transmit COM2):
+					Asynchronous Serial port COM2 transmit pin, TX2.
+					Connect this pin to external serial device receive (Rx)
+					signal. This pin is 5.0V tolerant. This can be
+					configured to 1 of the GPIO pins, see table following.
+					</p>
+					<p>
+					RX2 pin (Serial Receive COM2):
+					Asynchronous Serial port COM2 receive pin, RX2.
+					Connect this pin to external serial device transmit (Tx)
+					signal. This pin is 5.0V tolerant. This can be
+					configured to 1 of the GPIO pins, see table following.
+					</p>
+					<p>
+					TX3 pin (Serial Transmit COM3):
+					Asynchronous Serial port COM3 transmit pin, TX3.
+					Connect this pin to external serial device receive (Rx)
+					signal. This pin is 5.0V tolerant. This can be
+					configured to 1 of the GPIO pins, see table following.
+					</p>
+					<p>
+					RX3 pin (Serial Receive COM3):
+					Asynchronous Serial port COM3 receive pin, RX3.
+					Connect this pin to external serial device transmit (Tx)
+					signal. This pin is 5.0V tolerant. This can be
+					configured to 1 of the GPIO pins, see table following.
+					</p>
+				</section>
+
 			</section>
 		</section>
 	
