@@ -334,16 +334,10 @@
 						<h4>Serial Ports - TTL Level Serial</h4>
 					</header>
 					<p>
-					The DIABLO16 Processor has three hardware
-					asynchronous serial ports (COM1 – COM3) that can
-					be configured on a variety of the processors GPIO
-					pins. TX/RX0 (COM0) is dedicated and its pins are
-					fixed. All of the DIABLO16’s serial ports can be used
-					to communicate with external serial devices.
+					The DIABLO16 Processor has three hardware asynchronous serial ports (COM1 – COM3) that can be configured on a variety of the processors GPIO pins. TX/RX0 (COM0) is dedicated and its pins are fixed. All of the DIABLO16’s serial ports can be used to communicate with external serial devices.
 					</p>
 					<p>
-					TX/RX0 are referred to as COM0, and is the only one
-					used for programming the DIABLO16 itself.
+					TX/RX0 are referred to as COM0, and is the only one used for programming the DIABLO16 itself.
 					</p>
 					<p>
 					The primary features are:
@@ -356,22 +350,10 @@
 							<li>Independent Baud rates from 300 baud up
 							to 600K baud.</li>
 
-							<li>Single byte transmits and receives or a fully
-							buffered service. The buffered service
-							feature runs in the background capturing
-							and buffering serial data without the user
-							application having to constantly poll any of
-							the serial ports. This frees up the application
-							to service other tasks.</li>
+							<li>Single byte transmits and receives or a fully buffered service. The buffered service feature runs in the background capturing and buffering serial data without the user application having to constantly poll any of the serial ports. This frees up the application to service other tasks.</li>
 						</ul>
 					</p>
-					<p>
-					A single byte serial transmission consists of the start
-					bit, 8-bits of data followed by the stop bit. The start
-					bit is always 0, while a stop bit is always 1. The LSB
-					(Least Significant Bit, Bit 0) is sent out first following
-					the start bit. Figure below shows a single byte
-					transmission timing diagram.
+					<p>A single byte serial transmission consists of the start bit, 8-bits of data followed by the stop bit. The start bit is always 0, while a stop bit is always 1. The LSB (Least Significant Bit, Bit 0) is sent out first following the start bit. Figure below shows a single byte transmission timing diagram.
 					</p>
 					<p>
 					COM0 is also the primary interface for User program downloads, and configuration PmmC /Driver programming. Once the compiled 4DGL application program (EVE byte-code) is downloaded and the user code starts executing, the serial port is then available to the user application.
@@ -409,7 +391,36 @@
 					Asynchronous Serial port COM3 receive pin, RX3. Connect this pin to external serial device transmit (Tx) signal. This pin is 5.0V tolerant. This can be configured to 1 of the GPIO pins, see table following.
 					</p>
 				</section>
-
+				<section id="serial-ports" class="sub-sub-section">
+					<header>
+						<h4>General Purpose I/O</h4>
+					</header>
+					<p>
+						There are 16 general purpose Input/Output (GPIO) pins available to the user. These provide flexibility of individual bit operations along with serving collectively for byte wise operations using the BUS functions
+					</p>
+					<p>
+						<strong class="bold-title">PA0-PA3:</strong>
+						General purpose I/O pins, or can serve as Analog Input pins. Each pin can be individually set for INPUT or OUTPUT or ANALOG. Power-Up Reset default is all INPUTS. Digital GPIO can source/sink 10mA.
+						<p>
+							These pins have a 0 to 3.3V range, and have 12 bit resolution.
+						</p>
+					</p>
+					<p>
+						<strong class="bold-title">PA4-PA11:</strong>
+						General purpose I/O pins. Each pin can be individually
+						set for INPUT or OUTPUT. Power-Up Reset default is
+						all INPUTS. When set as Digital Inputs, the pins are 5V
+						tolerant. Digital GPIO can source/sink 10mA.
+					</p>
+					<strong class="bold-title">PA12-PA13:</strong>
+					<p>
+						PA12 and PA13 are reserved and are used exclusively for the resistive touch controller, or the capacitive touch controller (DT/DCT-CLB models). These pins should not be connected else Touch performance may be degraded. There are 4.7K pullup resistors on each of these GPIO. Avoid these pins in normal situations. However, using these pins on non-touch (D/D-CLB models) is OK, or in situations where touch is not required. These pins are 5V tolerant.
+					</p>
+					<p>
+					<strong class="bold-title">PA14-PA15:</strong>
+					General purpose I/O pins. Each pin can be individually set for INPUT or OUTPUT. Power-Up Reset default is all INPUTS. When set as Digital Inputs, the pins are 3.3V tolerant. Digital GPIO can source/sink 10mA. Under special situations, these pins can be utilised for a high speed I2C interface.
+					</p>
+				</section>
 			</section>
 		</section>
 	
@@ -417,11 +428,6 @@
 			<header>
 				<h2>4D Workshop IDE</h2>
 				<img src="WS4-PRO Buynow.jpg">
-				<!-- <div id="workshop-image">
-					<img id="workshop-image1" src="workshop4_software01.jpg">
-					<img id="workshop-image2" src="workshop4_software02.jpg">
-					<img id="workshop-image3" src="workshop4_software03.jpg">
-				</div> -->
 			</header>
 			<p>
 				Bacon ipsum dolor amet buffalo prosciutto frankfurter filet mignon strip steak turducken brisket ground round beef ribs chicken tongue. Salami ball tip meatball cupim cow burgdoggen jowl meatloaf pork belly ribeye frankfurter shoulder hamburger pork. Jowl cow fatback, turducken burgdoggen boudin drumstick shoulder andouille picanha ball tip filet mignon tongue flank. Drumstick sausage t-bone, meatloaf doner pork belly beef pancetta.
