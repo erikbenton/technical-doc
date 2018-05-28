@@ -421,6 +421,32 @@
 					General purpose I/O pins. Each pin can be individually set for INPUT or OUTPUT. Power-Up Reset default is all INPUTS. When set as Digital Inputs, the pins are 3.3V tolerant. Digital GPIO can source/sink 10mA. Under special situations, these pins can be utilised for a high speed I2C interface.
 					</p>
 				</section>
+
+				<section id="serial-ports" class="sub-sub-section">
+					<header>
+						<h4>System Pins</h4>
+					</header>
+					<p>
+						<strong class="bold-title">+5V IN (Module Voltage Input)</strong>
+						Module supply voltage input pins. Both of these pins should be connected to a stable supply voltage in the range of 4.0 Volts to 5.5 Volts DC. Nominal operating voltage is 5.0 Volts. Note backlight brightness will be lower for voltages under 5.0V.
+					</p>
+					<p>
+						<strong class="bold-title">GND (Module Ground)</strong>
+						Device ground pins. At least two pins should be connected to ground.
+					</p>
+					<p>
+						<strong class="bold-title">RESET (Module Master Reset)</strong>
+						Module Master Reset pin. An active low pulse of greater than 2μs will reset the module. Internally pulled up to 3.3V via a 10K resistor. Only use open collector type circuits to reset the device if an external reset is required.
+					</p>
+					<p>
+						<strong class="bold-title">AUDENB (Audio Enable Output)</strong>
+						Output dedicated to enable or disable and external amplifier, where required.
+					</p>
+					<p>
+						<strong class="bold-title">AUDIO (PWM Audio Output)</strong>
+						Output specifically for Audio. This pin is a PWM output from the DIABLO16 Processor. This pin is a 3.3V level PWM output to drive an external amplifier with DIABLO16 generated Audio, via an external filtering circuit to turn digital PWM into Analog. Note that AUDENB must be enabled in DIABLO16 for any input signal to be heard.
+					</p>
+				</section>
 			</section>
 		</section>
 	
