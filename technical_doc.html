@@ -16,6 +16,11 @@
 				<li><a class="nav-link" href="#screen-features">Features</a></li>
 				<li><a class="nav-link" href="#screen-hardware-overview">Hardware Overview</a></li>
 				<li><a class="nav-link" href="#screen-hardware-interface">Hardware Interface</a></li>
+				<ul>
+					<li><a class="nav-link" href="#serial-ports">Serial Ports</a></li>
+					<li><a class="nav-link" href="#general-purpose-pins">GPIO</a></li>
+					<li><a class="nav-link" href="#system-pins">System Pins</a></li>
+				</ul>
 			</ul>
 			<li><a class="nav-link" href="#workshop">4D Workshop IDE</a></li>
 			<ul>
@@ -391,7 +396,7 @@
 					Asynchronous Serial port COM3 receive pin, RX3. Connect this pin to external serial device transmit (Tx) signal. This pin is 5.0V tolerant. This can be configured to 1 of the GPIO pins, see table following.
 					</p>
 				</section>
-				<section id="serial-ports" class="sub-sub-section">
+				<section id="general-purpose-pins" class="sub-sub-section">
 					<header>
 						<h4>General Purpose I/O</h4>
 					</header>
@@ -421,8 +426,7 @@
 					General purpose I/O pins. Each pin can be individually set for INPUT or OUTPUT. Power-Up Reset default is all INPUTS. When set as Digital Inputs, the pins are 3.3V tolerant. Digital GPIO can source/sink 10mA. Under special situations, these pins can be utilised for a high speed I2C interface.
 					</p>
 				</section>
-
-				<section id="serial-ports" class="sub-sub-section">
+				<section id="system-pins" class="sub-sub-section">
 					<header>
 						<h4>System Pins</h4>
 					</header>
