@@ -472,8 +472,12 @@
 								To enable the Pulse Out function on a GPIO pin, the following 4DGL functions are used:
 							</p>
 							<p>
-								<strong>pin_Pulseout(pin, value); //Non-Blocking</strong>
-								<strong>pin_PulseoutB(pin, value); //Blocking</strong>
+								<p>
+									<strong>pin_Pulseout(pin, value); //Non-Blocking</strong>
+								</p>
+								<p>
+									<strong>pin_PulseoutB(pin, value); //Blocking</strong>
+								</p>
 							</p>
 							<p>
 								Where ‘pin’ is the target GPIO pin compatible with that particular pin function, and ‘value’ is the length of the pulse in milliseconds.
@@ -481,6 +485,27 @@
 						</li>
 						<li>
 							<h5>PWM Out</h5>
+							<p>
+								There are 6 PWM channels available to be configured by the user, with 4 time bases available for selection.
+							</p>
+							<p>
+								The PWM can be configured to be used in Servo Mode, or Simple Mode.
+							</p>
+							<p>
+								Please refer to the table on the previous page for details on which GPIO can be configured for PWM.
+							</p>
+							<p>
+								Servo Mode allows a millisecond input value with 0.01ms resolution, which runs at a frequency of approximately 50Hz or 50pps (20ms). The position of the servo is determined by the width of the pulse. Generally 1.5ms is 90 degrees, 1ms being 0 degrees and 2ms being 180 degrees. Servos however vary, and the DIABLO16 PWM control can be adjusted to suit most applications.
+							</p>
+							<p>
+								Simple Mode allows a percentage input value with resolution of 0.1%, which runs at a frequency of approximately 70KHz. To enable the PWM output on a GPIO pin, the following 4DGL function is used:
+							</p>
+							<p>
+								<strong>PWM_Init(pin, mode, value);</strong>
+							</p>
+							<p>
+								Where ‘pin’ is the GPIO compatible with the particular pin function, ‘mode’ is the type of PWM to generate, and ‘value’ is the parameter which defined the PWM pulse itself.
+							</p>
 						</li>
 						<li>
 							<h5>Pin Counter</h5>
