@@ -456,6 +456,36 @@
 					<header>
 						<h4>Basic Pin Functions</h4>
 					</header>
+					<ul id="basic-pin-functions-list">
+						<li>
+							<h5>Pulse Out</h5>
+							<p>
+								Pulse Out is used to create a single pulse of set duration on the selected pin of choice, which is inverted in polarity to the current state of the pin.
+							</p>
+							<p>
+								This ‘inversion of polarity’ means if a Pin is currently held HI, and Pulse Out is executed on that Pin, the pin will pulse LO and then return to HI. Same with vice versa, if currently LO and Pulse Out is executed on that Pin, it will pulse HI and then return to LO. This is available in both blocking and non-blocking versions.
+							</p>
+							<p>
+								Note: Each Pulse Out request needs at least a 1ms lead time due to the scheduling of the event with the internal 1ms timer.
+							</p>
+							<p>
+								To enable the Pulse Out function on a GPIO pin, the following 4DGL functions are used:
+							</p>
+							<p>
+								<strong>pin_Pulseout(pin, value); //Non-Blocking</strong>
+								<strong>pin_PulseoutB(pin, value); //Blocking</strong>
+							</p>
+							<p>
+								Where ‘pin’ is the target GPIO pin compatible with that particular pin function, and ‘value’ is the length of the pulse in milliseconds.
+							</p>
+						</li>
+						<li>
+							<h5>PWM Out</h5>
+						</li>
+						<li>
+							<h5>Pin Counter</h5>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</section>
