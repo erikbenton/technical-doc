@@ -509,6 +509,21 @@
 						</li>
 						<li>
 							<h5>Pin Counter</h5>
+							<p>
+								There are 6 Pin Counter channels available to be configured by the user, used to count incoming pulses with the ability to call a user function on overflow. The Pin Counter function is available for use in a variety of modes.
+							</p>
+							<p>
+								The counters can be read and written at any time.
+							</p>
+							<p>
+								To enable the Pin Counter function on a GPIO pin, the following 4DGL function is used:
+							</p>
+							<p>
+								<strong>pin_Counter(pin, mode, OVFfunction);</strong>
+							</p>
+							<p>
+								Where ‘pin’ is the GPIO pin compatible with this particular function, ‘mode’ is the type of trigger used to count on such as Rising/Falling/Edge, and ‘OVFfunction’ is the user function to call when the counter overflows, if desired.
+							</p>
 						</li>
 					</ul>
 				</section>
