@@ -30,10 +30,7 @@
 .main-section {
 	border-bottom: 1px solid black;
 	padding-left: 32px;
-}
-
-.main-section p {
-	width: 95%;
+	padding-right: 25%;
 }
 
 #navbar-image {
